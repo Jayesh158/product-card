@@ -7,5 +7,68 @@
 </head>
 <body>
     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <style>
+        body{
+            background-color: #dede00;
+            background-image: linear-gradient(90deg, #dede00 0%, #00f6ff 100%);
+            min-height: 100vh;
+        }
+        .card-title{
+            text-align: center;
+            color: #f410b3;
+            font-weight: bolder;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        #card-main-img{
+            width: 400px;
+            height: 400px;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 0px 10px 0px  #6b666b;
+            margin: 20px auto;
+            display: block;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        .card-img{
+            height: 80px;
+            width: 75px;
+            border: 1px solid  #161616;
+            border-radius: 8px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="card-title">Product card Design</h1>
+    <h2 class="card-title">Product Name - one plus nord ce 3 lite</h2>
+    <img src="./img/img3.png" id="card-main-img"/>
+    <div class="container">
+        <img src="./IMG/img1.png" class="card-img" onclick="changeImage('./IMG/img1.png')"/>
+        <img src="./IMG/img2.png" class="card-img" onclick="changeImage('./IMG/img2.png')"/>
+        <img src="./IMG/img3.png" class="card-img" onclick="changeImage('./IMG/img3.png')"/>
+        <img src="./IMG/img4.png" class="card-img" onclick="changeImage('./IMG/img4.png')"/>
+        <img src="./IMG/img5.png" class="card-img" onclick="changeImage('./IMG/img5.png')"/>
+        <img src="./IMG/img6.png" class="card-img" onclick="changeImage('./IMG/img6.png')"/>
+    </div>
+    <script>
+        function changeImage(imageName){
+            const mainImg = document.getElementById('card-main-img');
+            mainImg.src = imageName;
+        }
+    </script>
+</body>
+</html>
+
 </body>
 </html>
